@@ -78,6 +78,10 @@ gulp.task('build', ['build-dependencies'], function() {
 		debug: false,
 		bundleExternal: false
 	}, {
+		fileName: 'angular-input-masks.ru.js',
+		debug: false,
+		bundleExternal: false
+	}, {
 		fileName: 'angular-input-masks.js',
 		outputFileName: 'angular-input-masks-standalone.js',
 		debug: false,
