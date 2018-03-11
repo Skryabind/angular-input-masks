@@ -272,7 +272,7 @@ describe('ui-money-mask', function() {
 
 	it('should format integer models', function() {
 		var input = TestUtil.compile('<input ng-model="model" ui-money-mask ui-integer-model>', {
-				model: 12345
+			model: 12345
 		});
 
 		var model = input.controller('ngModel');

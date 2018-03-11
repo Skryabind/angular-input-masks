@@ -4,6 +4,7 @@ var StringMask = require('string-mask');
 var maskFactory = require('../../helpers/mask-factory');
 
 var phoneMaskRU = new StringMask('+0 (000) 000-0000'),
+	phoneMask12 = new StringMask('+0 (000) 000-00000'),
 	phoneMaskINTL = new StringMask('+0-000-000-000000');
 
 module.exports = maskFactory({
@@ -15,6 +16,8 @@ module.exports = maskFactory({
 
 		if (cleanValue.length <= 11) {
 			formattedValue = phoneMaskRU.apply(cleanValue) || '';
+		} else if (cleanValue.length === 12) {
+			formattedValue = phoneMask12.apply(cleanValue);
 		} else {
 			formattedValue = phoneMaskINTL.apply(cleanValue);
 		}
@@ -23,7 +26,7 @@ module.exports = maskFactory({
 	},
 	validations: {
 		ruPhoneNumber: function(value) {
-			return value && value.toString().length > 9;
+			return value && value.toString().length > 6;
 		}
 	}
 });
