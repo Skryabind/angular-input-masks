@@ -4,7 +4,7 @@ var StringMask = require('string-mask');
 var maskFactory = require('../../helpers/mask-factory');
 
 var phoneMaskRU = new StringMask('+0 (000) 000-0000'),
-	phoneMask12 = new StringMask('+000-00-000-00-00'),
+	phoneMask12 = new StringMask('+000 (00) 000-0000'),
 	phoneMaskINTL = new StringMask('+0-000-000-000000');
 
 module.exports = maskFactory({
