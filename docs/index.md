@@ -88,6 +88,18 @@
 ```html
 <input type="text" name="field" ng-model="phoneNumber" ui-br-phone-number-mask>
 ```
+* Suports only *simple* phone number format: `1234-5678` || `12345-6789`
+```html
+<input type="text" name="field" ng-model="phoneNumber" ui-br-phone-number-mask="simple">
+```
+* Suports only *area code* phone number format: `(12) 3456-7890` || `(12) 34567-8901`
+```html
+<input type="text" name="field" ng-model="phoneNumber" ui-br-phone-number-mask="areaCode">
+```
+* Suports only *country code* phone number format: `+12 (34) 5678-9012` || `+12 (34) 56789-0123`
+```html
+<input type="text" name="field" ng-model="phoneNumber" ui-br-phone-number-mask="countryCode">
+```
 
 ## ui-us-phone-number ##
 
@@ -131,6 +143,16 @@
 <input type="text" name="field" ng-model="initializedCpfCnpj1" ui-br-cpfcnpj-mask>
 ```
 
+## ui-br-numero-beneficio-mask ##
+
+ - Example:
+
+```html
+<input type="text" name="field" ng-model="initializedNumeroBeneficio" ui-br-numero-beneficio-mask>
+```
+
+ - Máscara o número do benefício do INSS que segue o formato 999.999.999-9. 
+
 
 ## ui-br-ie-mask ##
 ```html
@@ -169,6 +191,15 @@
 <input type="text" name="field" ng-model="birthDate" ui-date-mask parse="false">
 ```
 
+## time-mask ##
+-Example:
+
+```html
+<input type="text" name="time" ng-model="time" ui-time-mask>
+```
+```html
+<input type="text" name="initializedShortTimeMask" ng-model="initializedShortTimeMask" ui-time-mask="short">
+```
 
 ## Masks to be documentated (help wanted!)
 

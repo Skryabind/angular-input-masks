@@ -1,6 +1,52 @@
-# Change Log
+# Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [4.4.1](https://github.com/assisrafael/angular-input-masks/compare/v4.4.0...v4.4.1) (2019-05-29)
+
+
+
+<a name="4.4.0"></a>
+# [4.4.0](https://github.com/assisrafael/angular-input-masks/compare/v4.3.0...v4.4.0) (2019-05-29)
+
+
+### Features
+
+* **uiBrNumeroBeneficioMask:** mask for BR social security benefit number. ([#351](https://github.com/assisrafael/angular-input-masks/issues/351)) ([0648cd5](https://github.com/assisrafael/angular-input-masks/commit/0648cd5))
+
+
+
+<a name="4.3.0"></a>
+# [4.3.0](https://github.com/assisrafael/angular-input-masks/compare/v4.2.1...v4.3.0) (2019-01-25)
+
+
+### Features
+
+* **brPhoneMask:** allow mode (simple, areaCode, countryCode) configuration ([#336](https://github.com/assisrafael/angular-input-masks/issues/336)) ([cad705a](https://github.com/assisrafael/angular-input-masks/commit/cad705a))
+* **uiBrBoletoBancarioMask:** allow 48 characters length format ([eed6383](https://github.com/assisrafael/angular-input-masks/commit/eed6383))
+
+
+
+<a name="4.2.1"></a>
+## [4.2.1](https://github.com/assisrafael/angular-input-masks/compare/v4.2.0...v4.2.1) (2018-06-18)
+
+
+### Bug Fixes
+
+* **uiDateMask:** lock date-fns version (2.0.0-alpha.7) and fix date mask tests ([a785dc9](https://github.com/assisrafael/angular-input-masks/commit/a785dc9))
+* **uiMoneyMask:** fix money masking result when field is empty ([dbfe5ff](https://github.com/assisrafael/angular-input-masks/commit/dbfe5ff))
+
+
+
+<a name="4.2.0"></a>
+# [4.2.0](https://github.com/assisrafael/angular-input-masks/compare/v4.1.0...v4.2.0) (2018-05-24)
+
+
+### Features
+
+* support more locales for date mask ([#323](https://github.com/assisrafael/angular-input-masks/issues/323)) ([8951f3b](https://github.com/assisrafael/angular-input-masks/commit/8951f3b))
+
+
 
 <a name="4.1.0"></a>
 # [4.1.0](https://github.com/assisrafael/angular-input-masks/compare/v4.0.1...v4.1.0) (2017-10-27)
